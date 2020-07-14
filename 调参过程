@@ -1,0 +1,61 @@
+1. optimizer={{choice(['rmsprop', 'adam', 'sgd', 'Adagrad', 'Adadelta', 'Adamax', 'Nadam'])}} 
+   batch_size={{choice([64, 80, 100, 128, 256, 300, 512, 600, 1024])}}
+结果：({'batch_size': 5, 'dropout1': 0.11245974166556161, 'dropout1_1': 0.3207527760045966, 'dropout1_2': 0.7342146978592597, 'dropout1_3': 0.692539034315719, 'dropout1_4': 0.21280043312755825, 'optimizer': 6}, None)
+
+
+
+2.
+
+参数：
+# dropout1 = 0.13749544245386258
+# dropout2 = 0.587606728324542
+# dropout3 = 0.3746350041674067
+# dropout4 = 0.5838315653286106
+# dropout5 = 0.8713141896816126
+optimizer = ['SGD', 'RMSprop', 'Adagrad', 'Adadelta', 'Adam', 'Adamax', 'Nadam']
+
+
+结果：
+Best: 0.955186 using {'batch_size': 64, 'optimizer': 'Adamax'}
+0.952838 (0.000097) with: {'batch_size': 64, 'optimizer': 'SGD'}
+0.829775 (0.007732) with: {'batch_size': 64, 'optimizer': 'RMSprop'}
+0.937099 (0.000151) with: {'batch_size': 64, 'optimizer': 'Adagrad'}
+0.782597 (0.003644) with: {'batch_size': 64, 'optimizer': 'Adadelta'}
+0.941069 (0.000817) with: {'batch_size': 64, 'optimizer': 'Adam'}
+0.955186 (0.000250) with: {'batch_size': 64, 'optimizer': 'Adamax'}
+0.941651 (0.000990) with: {'batch_size': 64, 'optimizer': 'Nadam'}
+0.951868 (0.000215) with: {'batch_size': 80, 'optimizer': 'SGD'}
+0.883246 (0.012371) with: {'batch_size': 80, 'optimizer': 'RMSprop'}
+0.936637 (0.000255) with: {'batch_size': 80, 'optimizer': 'Adagrad'}
+0.776133 (0.010540) with: {'batch_size': 80, 'optimizer': 'Adadelta'}
+0.944012 (0.000661) with: {'batch_size': 80, 'optimizer': 'Adam'}
+0.955015 (0.000038) with: {'batch_size': 80, 'optimizer': 'Adamax'}
+0.945577 (0.001200) with: {'batch_size': 80, 'optimizer': 'Nadam'}
+0.951263 (0.000069) with: {'batch_size': 100, 'optimizer': 'SGD'}
+0.935039 (0.000863) with: {'batch_size': 100, 'optimizer': 'RMSprop'}
+0.937262 (0.000018) with: {'batch_size': 100, 'optimizer': 'Adagrad'}
+0.765600 (0.004051) with: {'batch_size': 100, 'optimizer': 'Adadelta'}
+0.947170 (0.000664) with: {'batch_size': 100, 'optimizer': 'Adam'}
+0.955166 (0.000138) with: {'batch_size': 100, 'optimizer': 'Adamax'}
+0.946101 (0.000758) with: {'batch_size': 100, 'optimizer': 'Nadam'}
+0.950045 (0.000766) with: {'batch_size': 128, 'optimizer': 'SGD'}
+0.947058 (0.000301) with: {'batch_size': 128, 'optimizer': 'RMSprop'}
+0.936022 (0.000626) with: {'batch_size': 128, 'optimizer': 'Adagrad'}
+0.744587 (0.000276) with: {'batch_size': 128, 'optimizer': 'Adadelta'}
+0.948881 (0.001277) with: {'batch_size': 128, 'optimizer': 'Adam'}
+0.955107 (0.000335) with: {'batch_size': 128, 'optimizer': 'Adamax'}
+0.948416 (0.000332) with: {'batch_size': 128, 'optimizer': 'Nadam'}
+0.943241 (0.001641) with: {'batch_size': 256, 'optimizer': 'SGD'}
+0.950310 (0.001639) with: {'batch_size': 256, 'optimizer': 'RMSprop'}
+0.937181 (0.000375) with: {'batch_size': 256, 'optimizer': 'Adagrad'}
+0.701744 (0.010185) with: {'batch_size': 256, 'optimizer': 'Adadelta'}
+0.952238 (0.000212) with: {'batch_size': 256, 'optimizer': 'Adam'}
+0.954615 (0.000363) with: {'batch_size': 256, 'optimizer': 'Adamax'}
+0.952536 (0.000460) with: {'batch_size': 256, 'optimizer': 'Nadam'}
+0.933175 (0.001440) with: {'batch_size': 512, 'optimizer': 'SGD'}
+0.954152 (0.000396) with: {'batch_size': 512, 'optimizer': 'RMSprop'}
+0.938475 (0.000996) with: {'batch_size': 512, 'optimizer': 'Adagrad'}
+0.630204 (0.005087) with: {'batch_size': 512, 'optimizer': 'Adadelta'}
+0.953964 (0.000002) with: {'batch_size': 512, 'optimizer': 'Adam'}
+0.954916 (0.000118) with: {'batch_size': 512, 'optimizer': 'Adamax'}
+0.954290 (0.000120) with: {'batch_size': 512, 'optimizer': 'Nadam'}
